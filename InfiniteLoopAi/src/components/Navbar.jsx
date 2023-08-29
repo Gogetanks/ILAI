@@ -44,12 +44,6 @@ li a {
 .right{
   float: right;
 }
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #ff8a00;
-  color:white;
-}
-
 
 `;
 
