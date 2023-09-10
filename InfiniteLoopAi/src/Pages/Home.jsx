@@ -35,9 +35,9 @@ const Home = () => {
         <p>At Infiniteloop AI, we are dedicated to revolutionizing the future of automation through cutting-edge artificial intelligence solutions. Our mission is to empower businesses of all sizes to unlock their full potential by harnessing the power of AI to streamline operations, enhance efficiency, and drive innovation.</p>
     </div>
     <div className="promise">
-        <h1>leverage InfiniteLoop AI's comprehensive and updated<span className='ai'> AI development </span>expertise to maximize your businesses potential</h1>
+        <h1>leverage InfiniteLoop AI's comprehensive<span className='ai'> AI development </span>expertise to maximize your businesses potential</h1>
     </div>
-    <div className="cards">
+    <div className="Services">
 
     </div>
     </Hom>
@@ -55,8 +55,7 @@ const Hom  = styled.section`
         transform: translate(-50%, -50%);
         color:  #6F6F6F;
         margin-bottom: 10rem;
-        font-family: 'Oswald', sans-serif;
-        font-family: 'Work Sans', sans-serif;
+        font-family: 'Share Tech Mono', monospace;
         margin-left:-1rem;
         margin-right:-1rem;
         
@@ -98,12 +97,13 @@ const Hom  = styled.section`
         color:  #6F6F6F;
         background-color:#f7f7f7;
         font-size: 1.5rem;
-        font-family: 'Oswald', sans-serif;
-        font-family: 'Work Sans', sans-serif;
+        font-family: 'Share Tech Mono', monospace;
         margin-left:-1rem;
         margin-right:-1rem;
         padding-left:30rem;
         padding-right:30rem;
+        font-weight:400;
+        letter-spacing: 1px;
         
     }
 
@@ -117,7 +117,7 @@ const Hom  = styled.section`
         padding-bottom:2rem;
         padding-right: 30rem;
         margin-top:0px;
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Share Tech Mono', monospace;
         letter-spacing: 3px;
         margin-left:-1rem;
         margin-right:-1rem;
