@@ -27,8 +27,7 @@ ul {
   font-size: 1.4rem;
   margin-left:-1rem;
   margin-right:-1rem;
-          font-family: 'Oswald', sans-serif;
-        font-family: 'Work Sans', sans-serif;  
+  font-family: 'Share Tech Mono', monospace;
 }
 
 li {
