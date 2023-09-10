@@ -6,12 +6,13 @@ import Button from '@mui/material/Button'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+
 const Home = () => {
   return (
     <div>
     <Navbar/>
     <Hom>
-    <div className='Hero'>
+    <section className='Hero'>
     <div className='Hero-heading'>
                     <Typewriter
  
@@ -20,7 +21,7 @@ const Home = () => {
                         .typeString("Welcome To")
                         .pauseFor(10)
                         .deleteAll()
-                        .typeString("InfinteLoop AI")
+                        .typeString('InfiniteLoop AI')
                         .start();
                 }}
             />
@@ -28,6 +29,16 @@ const Home = () => {
     <p className='Hero-para'>Pioneering AI-Powered Solutions for Business Excellence </p>
     <Link><Button variant='contained' className='B1'>Book Us</Button></Link>
     <Link to='/aboutus'><Button variant='outlined' className='B2'>About Us</Button></Link>
+    </section>
+    <div className="Us">
+        <h2>Who are we?</h2>
+        <p>At Infiniteloop AI, we are dedicated to revolutionizing the future of automation through cutting-edge artificial intelligence solutions. Our mission is to empower businesses of all sizes to unlock their full potential by harnessing the power of AI to streamline operations, enhance efficiency, and drive innovation.</p>
+    </div>
+    <div className="promise">
+        <h1>leverage InfiniteLoop AI's comprehensive and updated<span className='ai'> AI development </span>expertise to maximize your businesses potential</h1>
+    </div>
+    <div className="cards">
+
     </div>
     </Hom>
     <Footer/>
@@ -36,15 +47,19 @@ const Home = () => {
 }
 
 const Hom  = styled.section`
-
     .Hero{
-        
         text-align: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: black;
+        color:  #6F6F6F;
+        margin-bottom: 10rem;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+        margin-left:-1rem;
+        margin-right:-1rem;
+        
     }
 
     .Hero-heading{
@@ -71,6 +86,45 @@ const Hom  = styled.section`
         background-color: #72d0ff;
         border-color: #72d0ff;
         color: #ffff;
+    }
+
+    .Us{
+
+        text-align: center;
+        position: relative;
+        margin-top:60rem;
+        padding-top:7rem;
+        padding-bottom:7rem;
+        color:  #6F6F6F;
+        background-color:#f7f7f7;
+        font-size: 1.5rem;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+        margin-left:-1rem;
+        margin-right:-1rem;
+        padding-left:30rem;
+        padding-right:30rem;
+        
+    }
+
+    .promise{
+        color: white;
+        font-size: 2rem;
+        background-color: black;
+        text-align: center;
+        padding-left: 30rem;
+        padding-top:4rem;
+        padding-bottom:2rem;
+        padding-right: 30rem;
+        margin-top:0px;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 3px;
+        margin-left:-1rem;
+        margin-right:-1rem;
+        
+    }
+    .ai{
+        color:#72d0ff;
     }
 `;
 export default Home

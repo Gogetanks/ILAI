@@ -9,7 +9,7 @@ const Navbar = () => {
           <li><Link to="/">InfiniteLoop AI</Link></li>
           <li className='right'><Link to="/">Login</Link></li>
           <li className='right'><Link to="/">Contact</Link></li>
-          <li className='right'><Link to="/aboutus">About Us</Link></li>
+          <li className='right'><Link to="/aboutus">Our Services</Link></li>
         </ul>
       </nav>
     </NAVBAR>
@@ -25,7 +25,10 @@ ul {
   padding-right: 5rem;
   overflow: hidden;
   font-size: 1.4rem;
-
+  margin-left:-1rem;
+  margin-right:-1rem;
+          font-family: 'Oswald', sans-serif;
+        font-family: 'Work Sans', sans-serif;  
 }
 
 li {
