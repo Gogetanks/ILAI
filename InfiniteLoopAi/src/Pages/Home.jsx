@@ -5,11 +5,14 @@ import Typewriter from 'typewriter-effect'
 import Button from '@mui/material/Button'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Home = () => {
   return (
-    <div>
+    <>
     <Navbar/>
     <Hom>
     <section className='Hero'>
@@ -37,12 +40,47 @@ const Home = () => {
     <div className="promise">
         <h1>leverage InfiniteLoop AI's comprehensive<span className='ai'> AI development </span>expertise to maximize your businesses potential</h1>
     </div>
-    <div className="Services">
-
-    </div>
+    <Container className='cont'>
+    <Row>
+    <Col sm={4}>    
+    <Card  className='cards-cust'>
+      <Card.Body>
+        <Card.Title className='ctitle'>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col sm={4}>    
+    <Card className='cards-cust'>
+      <Card.Body>
+        <Card.Title className='ctitle'>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col sm={4}>    
+    <Card className='cards-cust'>
+      <Card.Body>
+        <Card.Title className='ctitle'>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </Col>
+      </Row>
+    </Container>
+      
     </Hom>
     <Footer/>
-    </div>
+    </>
   )
 }
 
@@ -114,7 +152,7 @@ const Hom  = styled.section`
         text-align: center;
         padding-left: 30rem;
         padding-top:4rem;
-        padding-bottom:2rem;
+        padding-bottom:4rem;
         padding-right: 30rem;
         margin-top:0px;
         font-family: 'Share Tech Mono', monospace;
@@ -125,6 +163,23 @@ const Hom  = styled.section`
     }
     .ai{
         color:#72d0ff;
+    }
+    .cont{
+        margin-top: 3rem;
+    }
+    .cards-cust{
+        padding: 3rem;
+        margin-top:5rem;
+        margin-bottom:10rem;
+        text-align: center;
+        width: 20rem;
+        border-radius: 1.5rem;
+        //box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23);
+    }
+
+    .ctitle{
+        font-size:2rem;
+        color: #6F6F6F;
     }
 `;
 export default Home
