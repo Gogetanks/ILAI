@@ -40,15 +40,19 @@ const Home = () => {
     <div className="promise">
         <h1>leverage InfiniteLoop AI's comprehensive<span className='ai'> AI development </span>expertise to maximize your businesses potential</h1>
     </div>
+    <div>
+      <h2 className='services'>Our Services</h2>
     <Container className='cont'>
     <Row>
     <Col sm={4}>    
-    <Card  className='cards-cust'>
+    <Card  className='cards-cust c1'>
       <Card.Body>
-        <Card.Title className='ctitle'>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Title className='ctitle'>GPT 3/4 Development</Card.Title>
+        <Card.Text className='ctext1'>
+            Language synthesis
+            Knowledge response
+            Chatbot development
+            Model tuning
         </Card.Text>
       </Card.Body>
     </Card>
@@ -56,27 +60,32 @@ const Home = () => {
     <Col sm={4}>    
     <Card className='cards-cust'>
       <Card.Body>
-        <Card.Title className='ctitle'>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Title className='ctitle'>AI Consulting</Card.Title>
+        <Card.Text className='ctext2'>
+          Feasibility assessments
+          Use case identification
+          Performance evaluation
+          Strategy development
         </Card.Text>
       </Card.Body>
     </Card>
     </Col>
     <Col sm={4}>    
-    <Card className='cards-cust'>
+    <Card className='cards-cust c3'>
       <Card.Body>
-        <Card.Title className='ctitle'>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Title className='ctitle'>Natural Language Processing</Card.Title>
+        <Card.Text className='ctext3'>
+          Document categorization
+          Data mining
+          Text summarization
+          Entity identification
         </Card.Text>
       </Card.Body>
     </Card>
     </Col>
       </Row>
     </Container>
+    </div>
       
     </Hom>
     <Footer/>
@@ -168,18 +177,39 @@ const Hom  = styled.section`
         margin-top: 3rem;
     }
     .cards-cust{
-        padding: 3rem;
+        padding: 5rem;
         margin-top:5rem;
         margin-bottom:10rem;
-        text-align: center;
+        
         width: 20rem;
         border-radius: 1.5rem;
         //box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23);
     }
 
     .ctitle{
-        font-size:2rem;
-        color: #6F6F6F;
+        font-size:1.5rem;
+        color: #000000;
+        text-align: center;
+    }
+
+    .c1{
+      margin-left:-4rem;
+    }
+    .c3{
+      margin-left:4rem;
+    }
+
+    .ctext1,.ctext2,.ctext3{
+      text-align: center;
+    }
+
+    .services{
+      margin-top: 5rem;
+      margin-bottom: -4rem;
+      text-align: center;
+      font-family: 'Share Tech Mono', monospace;
+      color: #72d0ff;
+
     }
 `;
 export default Home
