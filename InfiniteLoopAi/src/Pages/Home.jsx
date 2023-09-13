@@ -9,6 +9,9 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Lottie from 'lottie-react'
+import animationData1 from '../assets/animation_lmi4ug57.json'
+import animationData2 from '../assets/uGzpzKuZdp.json'
 
 const Home = () => {
   return (
@@ -16,6 +19,7 @@ const Home = () => {
     <Navbar/>
     <Hom>
     <section className='Hero'>
+    <Lottie className='infini' animationData={animationData2}/>
     <div className='Hero-heading'>
                     <Typewriter
  
@@ -41,7 +45,8 @@ const Home = () => {
         <h1>leverage InfiniteLoop AI's comprehensive<span className='ai'> AI development </span>expertise to maximize your businesses potential</h1>
     </div>
     <div>
-      <h2 className='services'>Our Services</h2>
+    <h2 className='services'>Our Services</h2>
+    <Lottie className='spin' animationData={animationData1}/>
     <Container className='cont'>
     <Row>
     <Col sm={4}>    
@@ -178,7 +183,7 @@ const Hom  = styled.section`
     }
     .cards-cust{
         padding: 5rem;
-        margin-top:5rem;
+        margin-top:3rem;
         margin-bottom:10rem;
         
         width: 20rem;
@@ -205,10 +210,21 @@ const Hom  = styled.section`
 
     .services{
       margin-top: 5rem;
-      margin-bottom: -4rem;
+      margin-bottom: 3rem;
       text-align: center;
       font-family: 'Share Tech Mono', monospace;
       color: #72d0ff;
+
+    }
+    .spin{
+      margin: 0 auto;
+      max-width: 20rem;
+      max-height: 20rem;
+    }
+    .infini{
+      margin: 0 auto;
+      max-width: 20rem;
+      max-height: 20rem;
 
     }
 `;
