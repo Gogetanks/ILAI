@@ -37,7 +37,7 @@ const Home = () => {
     <Link><Button variant='contained' className='B1'>Book Us</Button></Link>
     <Link to='/aboutus'><Button variant='outlined' className='B2'>About Us</Button></Link>
     </section>
-    <div className="Us">
+    <div className="Us" id="aboutus">
         <h2>Who are we?</h2>
         <p>At Infiniteloop AI, we are dedicated to revolutionizing the future of automation through cutting-edge artificial intelligence solutions. Our mission is to empower businesses of all sizes to unlock their full potential by harnessing the power of AI to streamline operations, enhance efficiency, and drive innovation.</p>
     </div>
@@ -45,7 +45,7 @@ const Home = () => {
         <h1>leverage InfiniteLoop AI's comprehensive<span className='ai'> AI development </span>expertise to maximize your businesses potential</h1>
     </div>
     <div>
-    <h2 className='services'>Our Services</h2>
+    <h2 className='services' id="ourservices">Our Services</h2>
     <Lottie className='spin' animationData={animationData1}/>
     <Container className='cont'>
     <Row>
@@ -91,7 +91,12 @@ const Home = () => {
       </Row>
     </Container>
     </div>
-      
+    <div className="Team">
+    <h2>MEET THE TEAM</h2>
+    </div>
+    <div className="Contact" id="contact">
+      <h2>CONTACT</h2>
+    </div>
     </Hom>
     <Footer/>
     </>
