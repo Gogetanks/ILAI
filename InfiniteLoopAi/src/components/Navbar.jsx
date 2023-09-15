@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import styled from 'styled-components'
 const Navbar = () => {
   return (
     <NAVBAR>
       <nav>
         <ul>
-          <li><Link to="/">InfiniteLoop AI</Link></li>
-          <li className='right'><Link to="/">Login</Link></li>
-          <li className='right'><Link to="/">Contact</Link></li>
-          <li className='right'><Link to="/aboutus">Our Services</Link></li>
+          <li><Link activeClass="active" spy={true} smooth={true} offset={50} duration={500} to="">InfiniteLoop AI</Link></li>
+          <li className='right'><Link activeClass="active" spy={true} smooth={true} offset={50} duration={500} to="contact">Contact</Link></li>
+          <li className='right'><Link activeClass="active" spy={true} smooth={true} offset={-50} duration={500} to="ourservices">Our Services</Link></li>
         </ul>
       </nav>
     </NAVBAR>
@@ -20,6 +19,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100vw;
   padding-left: 5rem;
   padding-top;2rem;
   padding-right: 5rem;
@@ -43,6 +43,9 @@ li a {
   text-decoration: none;
   border-radius: 5rem;
 }
+        li:hover{
+            cursor:pointer;
+        }
 .right{
   float: right;
 }
